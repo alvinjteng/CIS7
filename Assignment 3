@@ -7,4 +7,37 @@
    |5.3    |         |
    -------------------
   
-37.
+37. A = (Value1 < Value2) B = odd(Number)
+(A'VB) V (A'^B)
+| A | B | A'VB | A'^B |
+| T | T |  T   |  F   |
+| T | F |  F   |  F   |
+| F | T |  T   |  T   |
+| F | F |  T   |  F   |
+if not (Value1 < Value2) then
+   statement1
+   else
+   statement2
+   end if
+   
+38. (A^B)' ^ C = not(A and B) and C
+   Yes, this is how to execute statement1 when A and B are false and C is true.
+
+| A = Percival B = Llewellyn |
+61. (A^B)
+| A | B | A^B | If Percival is the liar then it would be impossible for Llewellyn to be telling the truth
+| T | T |  T  | or lying. Therefore, Percival is telling the truth. Percival is telling the truth and
+| T | F |  F  | Llewellyn is the liar.
+| F | T |  F  | 
+| F | F |  F  | 
+
+62. (A->B)
+| A | B | A->B |
+| T | T | 
+| T | F | 
+| F | T | 
+| F | F | 
+
+63. 
+
+64. 
