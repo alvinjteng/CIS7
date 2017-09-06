@@ -23,7 +23,7 @@ if not (Value1 < Value2) then
 38. (A^B)' ^ C = not(A and B) and C
    Yes, this is how to execute statement1 when A and B are false and C is true.
 
-| A = Percival B = Llewellyn |
+| A = First Name B = Second Name |
 61. (A^B)
 | A | B | A^B | If Percival is the liar then it would be impossible for Llewellyn to be telling the truth
 | T | T |  T  | or lying. Therefore, Percival is telling the truth. Percival is telling the truth and
@@ -32,12 +32,20 @@ if not (Value1 < Value2) then
 | F | F |  F  | 
 
 62. (A->B)
-| A | B | A->B |
-| T | T | 
-| T | F | 
-| F | T | 
-| F | F | 
+| A | B | A->B | Merlin is saying that if she is a truth-teller then Meredith is a truth-teller, which can
+| T | T |   T  | be possible. Which must mean that Merlin is a truth-teller and Meredith is also a truth
+| T | F |   F  | teller. 
+| F | T |   T  | 
+| F | F |   T  | 
 
-63. 
+63. (AvB)
+| A | B | AvB | Rothwold says he is a liar or Grymlin is a truth-teller. If he is lying about Grymlin being
+| T | T |  T  | a truth teller then his first statement saying he is a liar would be true, which would make
+| T | F |  T  | him a truth-teller because one of the statements is true. Since he is telling the truth and
+| F | T |  T  | his first statement is false, that must mean his second statement is true about Grymlin. Rothwold
+| F | F |  F  | and Grymlin are both truth-tellers.
 
-64. 
+64. A = liar | (AvA')
+| A | AvA' | Gwendolin is a truth-teller because if she is lying it means she is telling the truth about her being
+| T |  T   | a liar. Both Gwendolin and Merrilain are truth-tellers.
+| F |  T   |
