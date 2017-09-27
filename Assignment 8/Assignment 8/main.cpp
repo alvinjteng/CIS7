@@ -18,7 +18,7 @@ int main() {
     cin >> guess;
     cout << "Prime Numbers between 0-" << input << ": ";
     
-    for (int i = 0; i <= input; i++)
+    for (int i = 2; i <= input; i++)
     {
         count = 0;
         for (int j = 2; j < i; j++)
