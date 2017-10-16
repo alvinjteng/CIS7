@@ -8,7 +8,7 @@
 
 #include "tower.hpp"
 
-void moveDisk(int disk, tower a, tower b, tower c);
+void moveDisk(int disk, tower& a, tower& b, tower& c);
 void printTowers(tower a, tower b, tower c);
 
 int main() {
@@ -22,15 +22,14 @@ int main() {
     cin >> disks;
     for (int i = 0; i < disks; i++)
         a.disk.push_back(i+1);
-    
     moveDisk(disks, a, b, c);
 }
 
-void moveDisk(int disk, tower a, tower b, tower c) {
+void moveDisk(int disk, tower& a, tower& b, tower& c) {
     int dPop;
     if (disk == 1) {
         cout << "Move " << disk << " from " << a.name << " to " << b.name << ". " << endl;
-        if (a.disk.size() > 0) {
+        if (!a.disk.empty()) {
             dPop = a.disk.back();
             a.disk.pop_back();
             b.disk.push_back(dPop);
@@ -40,7 +39,7 @@ void moveDisk(int disk, tower a, tower b, tower c) {
     }
     moveDisk(disk - 1, a, c, b);
     cout << "Move " << disk << " from " << a.name << " to " << b.name << endl;
-    if (a.disk.size() > 0) {
+    if (!a.disk.empty()) {
         dPop = a.disk.back();
         a.disk.pop_back();
         b.disk.push_back(dPop);

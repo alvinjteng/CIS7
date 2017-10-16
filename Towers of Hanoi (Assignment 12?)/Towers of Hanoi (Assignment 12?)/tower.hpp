@@ -19,8 +19,10 @@ public:
     string name;
     vector<int> disk;
     void printNum(){
+        cout << name << ": ";
         for (int i = 0; i < disk.size(); i++)
-            cout << name << ": " << disk[i] << endl;
+            cout << disk[i] << " ";
+        cout << endl;
     }
 };
 
